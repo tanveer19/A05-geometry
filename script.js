@@ -40,7 +40,7 @@ document
     const parallelogrambvalue = parallelogramB.value;
     const parallelogramh = document.getElementById("parallelogram-h");
     const parallelogramhvalue = parallelogramh.value;
-    const parallelogramarea = 0.5 * parallelogrambvalue * parallelogramhvalue;
+    const parallelogramarea = parallelogrambvalue * parallelogramhvalue;
     // where to add
     const showTriangle = document.getElementById("show-parallelogram");
     // what to be added
