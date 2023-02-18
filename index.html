@@ -15,5 +15,58 @@
       </section>
       <section class="bg-sky-500 p-2 rounded-md">Blog</section>
     </header>
+
+    <main class="grid grid-cols-4 p-5">
+      <section
+        class="rounded-md border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <input
+          id="triangle-b"
+          class="bg-slate-100 w-1/4 inline"
+          type="text"
+          placeholder="b"
+        />cm
+        <input
+          id="triangle-h"
+          class="bg-slate-100 w-1/4 inline"
+          type="text"
+          placeholder="h"
+        />cm
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
+      </section>
+      <section>
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+      </section>
+      <section>
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+      </section>
+      <section>
+        <p class="underline underline-offset-8">Area Calculation</p>
+      </section>
+      <section>
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+      </section>
+      <section>
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+      </section>
+      <section>
+        <img src="images/triangle.png" alt="" />
+        <h2>Triangle</h2>
+      </section>
+    </main>
+    <script>
+      const calculateField = document.getElementById("btn-calculate");
+      const calculateValue = calculateField.value;
+    </script>
   </body>
 </html>
