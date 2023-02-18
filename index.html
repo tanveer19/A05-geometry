@@ -17,52 +17,166 @@
     </header>
 
     <main class="grid grid-cols-4 p-5">
+      <!-- triangle start -->
       <section
-        class="rounded-md border-2 border-slate-100 flex flex-col items-center"
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
       >
         <img src="images/triangle.png" alt="" />
         <h2>Triangle</h2>
         <p>Area (A) = 0.5 x b x h</p>
-        <input
-          id="triangle-b"
-          class="bg-slate-100 w-1/4 inline"
-          type="text"
-          placeholder="b"
-        />cm
-        <input
-          id="triangle-h"
-          class="bg-slate-100 w-1/4 inline"
-          type="text"
-          placeholder="h"
-        />cm
+        <div class="m-5">
+          <input
+            id="triangle-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="triangle-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
 
         <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
           Calculate
         </button>
       </section>
-      <section>
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
+      <!-- rectangle start -->
+      <section
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/rectangle.png" alt="" />
+        <h2>Rectangle</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <div class="m-5">
+          <input
+            id="rectangle-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="rectangle-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
       </section>
-      <section>
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
+      <!-- parallelogram start -->
+      <section
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/parallelogram.png" alt="" />
+        <h2>Parallelogram</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <div class="m-5">
+          <input
+            id="parallelogram-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="parallelogram-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
       </section>
+      <!-- area calc -->
       <section>
         <p class="underline underline-offset-8">Area Calculation</p>
         <ol id="show-triangle"></ol>
       </section>
-      <section>
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
+      <!-- Rhombus start -->
+      <section
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/rhombus.png" alt="" />
+        <h2>Rhombus</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <div class="m-5">
+          <input
+            id="Rhombus-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="Rhombus-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
       </section>
-      <section>
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
+      <!-- pentagon start -->
+      <section
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/pentagon.png" alt="" />
+        <h2>pentagon</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <div class="m-5">
+          <input
+            id="pentagon-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="pentagon-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
       </section>
-      <section>
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
+      <!-- Ellipse start -->
+      <section
+        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+      >
+        <img src="images/ellipse.png" alt="" />
+        <h2>Ellipse</h2>
+        <p>Area (A) = 0.5 x b x h</p>
+        <div class="m-5">
+          <input
+            id="Ellipse-b"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="b"
+          />cm
+          <input
+            id="Ellipse-h"
+            class="bg-slate-100 w-1/4 inline"
+            type="text"
+            placeholder="h"
+          />cm
+        </div>
+
+        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+          Calculate
+        </button>
       </section>
     </main>
     <script>
@@ -70,7 +184,7 @@
       document
         .getElementById("btn-calculate")
         .addEventListener("click", function () {
-          // get triangle b field
+          // get triangle fields
           const triangleB = document.getElementById("triangle-b");
           const triangleBValue = triangleB.value;
           const triangleH = document.getElementById("triangle-h");
@@ -78,7 +192,6 @@
           const triangleArea = 0.5 * triangleBValue * triangleHValue;
           // where to add
           const showTriangle = document.getElementById("show-triangle");
-          //   showTriangle.innerText = triangleArea;
           // what to be added
           const li = document.createElement("li");
           li.innerText = `1. Triangle   ` + triangleArea + `cm`;
