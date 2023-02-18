@@ -65,8 +65,18 @@
       </section>
     </main>
     <script>
-      const calculateField = document.getElementById("btn-calculate");
-      const calculateValue = calculateField.value;
+      // add event listener to calculate button
+      document
+        .getElementById("btn-calculate")
+        .addEventListener("click", function () {
+          // get triangle b field
+          const triangleB = document.getElementById("triangle-b");
+          const triangleBValue = triangleB.value;
+          const triangleH = document.getElementById("triangle-h");
+          const triangleHValue = triangleH.value;
+          const triangleArea = 0.5 * triangleBValue * triangleHValue;
+          console.log(triangleArea);
+        });
     </script>
   </body>
 </html>
