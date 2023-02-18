@@ -39,7 +39,7 @@
           />cm
         </div>
 
-        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+        <button id="btn-triangle" class="bg-sky-500 w-3/4 rounded-md">
           Calculate
         </button>
       </section>
@@ -49,7 +49,7 @@
       >
         <img src="images/rectangle.png" alt="" />
         <h2>Rectangle</h2>
-        <p>Area (A) = 0.5 x b x h</p>
+        <p>Area (A) = W x I</p>
         <div class="m-5">
           <input
             id="rectangle-b"
@@ -65,7 +65,7 @@
           />cm
         </div>
 
-        <button id="btn-calculate" class="bg-sky-500 w-3/4 rounded-md">
+        <button id="btn-rectangle" class="bg-sky-500 w-3/4 rounded-md">
           Calculate
         </button>
       </section>
@@ -98,7 +98,10 @@
       <!-- area calc -->
       <section>
         <p class="underline underline-offset-8">Area Calculation</p>
-        <ol id="show-triangle"></ol>
+        <ol>
+          <li id="show-triangle"></li>
+          <li id="show-rectangle"></li>
+        </ol>
       </section>
       <!-- Rhombus start -->
       <section
@@ -179,25 +182,6 @@
         </button>
       </section>
     </main>
-    <script>
-      // add event listener to calculate button
-      document
-        .getElementById("btn-calculate")
-        .addEventListener("click", function () {
-          // get triangle fields
-          const triangleB = document.getElementById("triangle-b");
-          const triangleBValue = triangleB.value;
-          const triangleH = document.getElementById("triangle-h");
-          const triangleHValue = triangleH.value;
-          const triangleArea = 0.5 * triangleBValue * triangleHValue;
-          // where to add
-          const showTriangle = document.getElementById("show-triangle");
-          // what to be added
-          const li = document.createElement("li");
-          li.innerText = `1. Triangle   ` + triangleArea + `cm`;
-          // add child
-          showTriangle.appendChild(li);
-        });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
