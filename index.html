@@ -50,6 +50,7 @@
       </section>
       <section>
         <p class="underline underline-offset-8">Area Calculation</p>
+        <ol id="show-triangle"></ol>
       </section>
       <section>
         <img src="images/triangle.png" alt="" />
@@ -75,7 +76,14 @@
           const triangleH = document.getElementById("triangle-h");
           const triangleHValue = triangleH.value;
           const triangleArea = 0.5 * triangleBValue * triangleHValue;
-          console.log(triangleArea);
+          // where to add
+          const showTriangle = document.getElementById("show-triangle");
+          //   showTriangle.innerText = triangleArea;
+          // what to be added
+          const li = document.createElement("li");
+          li.innerText = `1. Triangle   ` + triangleArea + `cm`;
+          // add child
+          showTriangle.appendChild(li);
         });
     </script>
   </body>
