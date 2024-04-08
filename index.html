@@ -18,176 +18,181 @@
       </section>
     </header>
 
-    <main class="grid grid-cols-4 p-5 gap-1">
-      <!-- triangle start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/triangle.png" alt="" />
-        <h2>Triangle</h2>
-        <p>Area (A) = 0.5 x b x h</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="triangle-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="triangle-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+    <div class="flex flex-col md:flex-row">
+      <main class="grid grid-cols-2 md:grid-cols-3 p-5 gap-1">
+        <!-- triangle start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/triangle.png" alt="" />
+          <h2>Triangle</h2>
+          <p>Area (A) = 0.5 x b x h</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="triangle-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="triangle-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
 
-        <button id="btn-triangle" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-      <!-- rectangle start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/rectangle.png" alt="" />
-        <h2>Rectangle</h2>
-        <p>Area (A) = W x I</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="rectangle-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="rectangle-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+          <button id="btn-triangle" class="bg-sky-500 p-1 rounded-md">
+            Calculate
+          </button>
+        </section>
+        <!-- rectangle start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/rectangle.png" alt="" />
+          <h2>Rectangle</h2>
+          <p>Area (A) = W x I</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="rectangle-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="rectangle-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
 
-        <button id="btn-rectangle" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-      <!-- parallelogram start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/parallelogram.png" alt="" />
-        <h2>Parallelogram</h2>
-        <p>Area (A) = b x h</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="parallelogram-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="parallelogram-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+          <button id="btn-rectangle" class="bg-sky-500 w-3/4 rounded-md">
+            Calculate
+          </button>
+        </section>
+        <!-- parallelogram start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/parallelogram.png" alt="" />
+          <h2>Parallelogram</h2>
+          <p>Area (A) = b x h</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="parallelogram-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="parallelogram-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
 
-        <button id="btn-parallelogram" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-      <!-- area calc -->
-      <section class="text-center">
-        <p class="underline underline-offset-8">Area Calculation</p>
-        <ol>
-          <li id="show-triangle"></li>
-          <li id="show-rectangle"></li>
-          <li id="show-parallelogram"></li>
-          <li id="show-rhombus"></li>
-          <li id="show-pentagon"></li>
-          <li id="show-ellipse"></li>
-        </ol>
-      </section>
-      <!-- Rhombus start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/rhombus.png" alt="" />
-        <h2>Rhombus</h2>
-        <p>Area (A) = 0.5 x d1 x d2</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="rhombus-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="rhombus-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+          <button id="btn-parallelogram" class="bg-sky-500 w-3/4 rounded-md">
+            Calculate
+          </button>
+        </section>
 
-        <button id="btn-rhombus" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-      <!-- pentagon start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/pentagon.png" alt="" />
-        <h2>pentagon</h2>
-        <p>Area (A) = 0.5 x b x h</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="pentagon-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="pentagon-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+        <!-- Rhombus start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/rhombus.png" alt="" />
+          <h2>Rhombus</h2>
+          <p>Area (A) = 0.5 x d1 x d2</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="rhombus-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="rhombus-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
 
-        <button id="btn-pentagon" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-      <!-- Ellipse start -->
-      <section
-        class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
-      >
-        <img src="images/ellipse.png" alt="" />
-        <h2>Ellipse</h2>
-        <p>Area (A) = &pi;ab</p>
-        <div class="m-5 flex justify-center gap-2">
-          <input
-            id="ellipse-b"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="b"
-          />cm
-          <input
-            id="ellipse-h"
-            class="bg-slate-100 w-1/4 inline"
-            type="text"
-            placeholder="h"
-          />cm
-        </div>
+          <button id="btn-rhombus" class="bg-sky-500 w-3/4 rounded-md">
+            Calculate
+          </button>
+        </section>
+        <!-- pentagon start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/pentagon.png" alt="" />
+          <h2>pentagon</h2>
+          <p>Area (A) = 0.5 x b x h</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="pentagon-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="pentagon-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
 
-        <button id="btn-ellipse" class="bg-sky-500 w-3/4 rounded-md">
-          Calculate
-        </button>
-      </section>
-    </main>
+          <button id="btn-pentagon" class="bg-sky-500 w-3/4 rounded-md">
+            Calculate
+          </button>
+        </section>
+        <!-- Ellipse start -->
+        <section
+          class="rounded-md p-5 border-2 border-slate-100 flex flex-col items-center"
+        >
+          <img src="images/ellipse.png" alt="" />
+          <h2>Ellipse</h2>
+          <p>Area (A) = &pi;ab</p>
+          <div class="m-5 flex justify-center gap-2">
+            <input
+              id="ellipse-b"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="b"
+            />cm
+            <input
+              id="ellipse-h"
+              class="bg-slate-100 w-1/4 inline"
+              type="text"
+              placeholder="h"
+            />cm
+          </div>
+
+          <button id="btn-ellipse" class="bg-sky-500 w-3/4 rounded-md">
+            Calculate
+          </button>
+        </section>
+      </main>
+      <aside>
+        <!-- area calc -->
+        <section class="text-center">
+          <p class="underline underline-offset-8">Area Calculation</p>
+          <ol>
+            <li id="show-triangle"></li>
+            <li id="show-rectangle"></li>
+            <li id="show-parallelogram"></li>
+            <li id="show-rhombus"></li>
+            <li id="show-pentagon"></li>
+            <li id="show-ellipse"></li>
+          </ol>
+        </section>
+      </aside>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
